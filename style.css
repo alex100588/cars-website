@@ -15,7 +15,7 @@ header {
   padding: 0.75rem 5rem;
 }
 
-img {
+.logo {
   width: 5rem;
   border-radius: 2rem;
 }
@@ -33,6 +33,61 @@ img {
   text-transform: uppercase;
 }
 
+.page-details {
+}
+
+.page-details h2 {
+  background: linear-gradient(black, rgb(55, 3, 3));
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(54, 7, 7);
+}
+
+.cars img {
+  width: 36rem;
+  height: 20rem;
+}
+
+.cars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem;
+}
+
+.car {
+  margin: 1rem;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+}
+
+.specs {
+  color: #fff;
+}
+
+.text {
+  display: flex;
+}
+
+.model {
+  margin-right: 1rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.brand {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 600px) {
   .navbar {
     width: 75%;
@@ -40,5 +95,13 @@ img {
   .navbar a {
     font-size: 1rem;
     padding-right: 0.3rem;
+  }
+
+  .cars {
+    grid-template-columns: 1fr;
+  }
+
+  .cars img {
+    width: 34rem;
   }
 }
