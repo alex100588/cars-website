@@ -15,13 +15,17 @@ header {
   padding: 0.75rem 5rem;
 }
 
+.header a {
+  padding-top: 1rem;
+}
+
 .logo {
   width: 5rem;
   border-radius: 2rem;
 }
 
 .navbar {
-  width: 40%;
+  width: 35%;
   display: flex;
   justify-content: space-between;
 }
@@ -31,23 +35,21 @@ header {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-}
-
-.page-details {
+  letter-spacing: 0.1rem;
 }
 
 .page-details h2 {
-  background: linear-gradient(black, rgb(55, 3, 3));
+  background: linear-gradient(black, rgb(73, 8, 86));
   text-align: center;
   font-size: 2rem;
   color: #fff;
   padding: 2rem 0;
 }
 
-#home {
+.home {
   display: flex;
   justify-content: center;
-  background-color: rgb(54, 7, 7);
+  background-color: #4c1349;
 }
 
 .cars img {
@@ -57,7 +59,7 @@ header {
 
 .cars {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 2rem;
 }
 
@@ -86,6 +88,57 @@ header {
   margin-bottom: 1rem;
   margin-right: 1rem;
   font-size: 1.3rem;
+}
+
+.specificationsDesign{
+    background-color: #4c1349;
+}
+
+.border-design{
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.flex-container{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 85vw;
+}
+
+
+.image-container img{
+    width: 60rem;
+    border-radius: 1rem;
+}
+
+.specDesign{
+    margin-left: 1rem;
+    color: white;
+}
+
+.specDesign p{
+    font-size: 1.5rem;
+}
+
+.image-container-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    row-gap: 1rem;
+}
+
+.images img{
+    width: 33rem;
+    border-radius: 1rem;
+    max-height: 17rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .cars {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {
