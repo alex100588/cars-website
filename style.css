@@ -183,6 +183,9 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 1000px) {
+  .navbar{
+    width: 47%;
+  }
   .cars {
     grid-template-columns: repeat(2, 1fr);
   }
