@@ -90,55 +90,125 @@ header {
   font-size: 1.3rem;
 }
 
-.specificationsDesign{
-    background-color: #4c1349;
+.specificationsDesign {
+  background-color: #4c1349;
 }
 
-.border-design{
-    border: 2px solid white;
-    border-radius: 1rem;
-    padding: 3rem;
+.border-design {
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 3rem;
 }
 
-.flex-container{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    display: flex;
-    width: 85vw;
+.flex-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  width: 85vw;
 }
 
-
-.image-container img{
-    width: 60rem;
-    border-radius: 1rem;
+.image-container img {
+  width: 60rem;
+  height: 37rem;
+  border-radius: 1rem;
 }
 
-.specDesign{
-    margin-left: 1rem;
-    color: white;
+.specDesign {
+  margin-left: 1rem;
+  color: white;
 }
 
-.specDesign p{
-    font-size: 1.5rem;
+.specDesign p {
+  font-size: 1.5rem;
 }
 
-.image-container-2{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5rem;
-    row-gap: 1rem;
+.image-container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+  row-gap: 1rem;
 }
 
-.images img{
-    width: 33rem;
-    border-radius: 1rem;
-    max-height: 17rem;
+.images img {
+  width: 33rem;
+  border-radius: 1rem;
+  max-height: 17rem;
+}
+
+.form-design {
+  margin-left: 13rem;
+}
+
+label {
+  color: white;
+  font-size: 3rem;
+}
+
+input::placeholder {
+  font-size: 1.6rem;
+}
+
+input,
+textarea {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  font-size: 1.6rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+}
+
+.footer-design {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-design a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  margin-left: 7rem;
 }
 
 @media screen and (max-width: 1000px) {
   .cars {
     grid-template-columns: repeat(2, 1fr);
   }
+  .image-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1rem;
+  }
+  .flex-container {
+    margin-top: 0;
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .image-container img {
+    width: 67rem;
+    border-radius: 1.3rem;
+  }
+  .form-design {
+    margin-left: 7rem;
+  }
+}
+
+footer {
+  background-color: black;
+  height: 12rem;
+  padding-top: 2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -155,6 +225,35 @@ header {
   }
 
   .cars img {
+    width: 32rem;
+  }
+
+  .image-container img {
     width: 34rem;
+    height: 21rem;
+    border-radius: 1rem;
+  }
+  .image-container-2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem 1rem;
+  }
+  .images img {
+    width: 34.3rem;
+  }
+
+  .form-design {
+    margin-left: 3rem;
+  }
+  .footer-design {
+    display: block;
+    height: 70%;
+    width: 60%;
+  }
+  .footer-design a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0.5rem;
   }
 }
