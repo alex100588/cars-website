@@ -135,8 +135,21 @@ header {
   max-height: 17rem;
 }
 
+#contact {
+  height: 69vh;
+}
+
 .form-design {
-  margin-left: 13rem;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
 }
 
 label {
@@ -168,6 +181,11 @@ input[type="submit"] {
   font-weight: 800;
   letter-spacing: 0.2rem;
 }
+footer {
+  background-color: black;
+  height: 12rem;
+  padding-top: 2rem;
+}
 
 .footer-design {
   width: 35%;
@@ -183,7 +201,7 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 1000px) {
-  .navbar{
+  .navbar {
     width: 47%;
   }
   .cars {
@@ -203,15 +221,9 @@ input[type="submit"] {
     width: 67rem;
     border-radius: 1.3rem;
   }
-  .form-design {
-    margin-left: 7rem;
+  form {
+    width: 90vw;
   }
-}
-
-footer {
-  background-color: black;
-  height: 12rem;
-  padding-top: 2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -243,9 +255,16 @@ footer {
   .images img {
     width: 34.3rem;
   }
+  #contact {
+    height: 113vh;
+  }
 
   .form-design {
-    margin-left: 3rem;
+    height: 75vh;
+  }
+  form {
+    width: 100vw;
+    height: 100vh;
   }
   .footer-design {
     display: block;
