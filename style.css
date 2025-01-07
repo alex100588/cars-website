@@ -6,7 +6,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
+.header-design {
   height: 8rem;
   background-color: black;
   display: flex;
@@ -113,12 +113,12 @@ header {
   border-radius: 1rem;
 }
 
-.specDesign {
+.spec-design {
   margin-left: 1rem;
   color: white;
 }
 
-.specDesign p {
+.spec-design p {
   font-size: 1.5rem;
 }
 
@@ -136,7 +136,7 @@ header {
 }
 
 #contact {
-  height: 69vh;
+  height: 75vh;
 }
 
 .form-design {
@@ -145,41 +145,45 @@ header {
   height: 60vh;
 }
 
-form {
+.form-style {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 60vw;
 }
 
-label {
+.label-design {
   color: white;
-  font-size: 3rem;
+  font-size: 1.3rem;
 }
 
-input::placeholder {
+.input-type::placeholder {
   font-size: 1.6rem;
 }
-
-input,
-textarea {
+.text-area {
+}
+.input-type,
+.text-area {
   width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 7px 20px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 
-input[type="submit"] {
+.input-button {
   font-size: 1.6rem;
   background-color: black;
+  width: 80%;
   color: white;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 0.2rem;
+  border-radius: 4px;
+  margin-top: 1.3rem;
+  padding: 7px 20px;
+  border: none;
 }
 footer {
   background-color: black;
@@ -200,12 +204,15 @@ footer {
   margin-left: 7rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .navbar {
     width: 47%;
   }
   .cars {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .car{
+    margin: 0;
   }
   .image-container-2 {
     display: grid;
@@ -221,10 +228,18 @@ footer {
     width: 67rem;
     border-radius: 1.3rem;
   }
-  form {
-    width: 90vw;
-  }
+  .cars img {
+    width: 34rem;
 }
+  .form-design{
+    margin-top: 13rem;
+  }
+  #contact {
+    height: 85vh;
+}
+}
+
+
 
 @media screen and (max-width: 600px) {
   .navbar {
@@ -238,6 +253,7 @@ footer {
   .cars {
     grid-template-columns: 1fr;
   }
+  
 
   .cars img {
     width: 32rem;
@@ -260,12 +276,8 @@ footer {
   }
 
   .form-design {
-    height: 75vh;
-  }
-  form {
-    width: 100vw;
-    height: 100vh;
-  }
+    margin-top: 10rem;
+}
   .footer-design {
     display: block;
     height: 70%;
